@@ -1,11 +1,61 @@
-/* 
+.tarea-form {
+    margin-bottom: 16px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.tarea-input,
+.tarea-item {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+}
 
-*/
+.tarea-input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.tarea-input:focus {
+    border-color: #5b8cff;
+    box-shadow: 0 0 0 3px rgba(91, 140, 255, 0.18);
+}
+
+.lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarea-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.tarea-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+.tarea-delete {
+    border: none;
+    background: transparent;
+    color: #545454;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.tarea-delete:hover {
+    background: rgba(198, 40, 40, 0.12);
+}
+
